@@ -12,6 +12,4 @@ order by visitors desc, location_name;
 
 
 /*  end  of  your code  */
- 
- 
 

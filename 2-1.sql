@@ -1,5 +1,6 @@
 use covid19mon;
 go
+delete person where id in (1,2,3);
 
 -- 向人员表person插入以下3条数据:
 -- ( 1, 张小敏,13907110001)
@@ -11,6 +12,3 @@ insert into person values(2, N'李大锤', N'18907110002');
 insert into person values(3, N'孙二娘', N'13307100003');
 
 -- -----------------------------------
- 
- 
- 
