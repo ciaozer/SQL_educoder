@@ -10,9 +10,12 @@
 -- 当前你处于SQL Server环境下！
 use covid19mon;
 go
+drop trigger if exists mytrigger;
+go
+
 create trigger mytrigger
 on diagnose_record
-for insert, update
+after insert, update
 as 
 update isolation_record set state = 3
 where isolation_record.p_id in (

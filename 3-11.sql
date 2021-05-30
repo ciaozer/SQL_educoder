@@ -5,7 +5,9 @@
 
 use covid19mon;
 go
---drop view isolation_location_status cascade;为什么不能drop
+drop view if exists isolation_location_status;
+go
+
 create view isolation_location_status
 as
 select id, location_name, capacity, 
